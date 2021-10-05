@@ -7,8 +7,8 @@ export default function WeatherView({ cityName }) {
       <p>Temperature: {Math.round(cityName.main.temp - 273.15)} °C</p>
       <p>Humidity: {cityName.main.humidity}</p>
       <p>Wind Speed: {cityName.wind.speed} km/h</p>
-      <p>Sunrise: {new Date(cityName.sys.sunrise * 1000).toString()}</p>
-      <p>Sunset: {new Date(cityName.sys.sunset * 1000).toString()}</p>
+      <p>Sunrise: {new Date(cityName.sys.sunrise * 1000).toLocaleTimeString('ru-RU')}</p>
+      <p>Sunset: {new Date(cityName.sys.sunset * 1000).toLocaleTimeString('ru-RU')}</p>
     </div>
   );
 }
