@@ -1,0 +1,17 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 500;
+  color: #2a363b;
+  font-size: 18px;
+  transition: all 250ms linear;
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.activeLink {
+  // composes: link;
+  color: #b00b69;
+}

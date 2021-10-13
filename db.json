@@ -1,0 +1,127 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474171184l/136251._SY475_.jpg",
+      "title": "Harry Potter and the Deathly Hallows",
+      "descr": "It's no longer safe for Harry at Hogwarts, so he and his best friends, Ron and Hermione, are on the run. Professor Dumbledore has given them clues about what they need to do to defeat the dark wizard, Lord Voldemort, once and for all, but it's up to them to figure out what these hints and suggestions really mean. Their cross-country odyssey has them searching desperately for the answers, while evading capture or death at every turn. At the same time, their friendship, fortitude, and sense of right and wrong are tested in ways they never could have imagined. The ultimate battle between good and evil that closes out this final chapter of the epic series takes place where Harry's Wizarding life began: at Hogwarts. The satisfying conclusion offers shocking last-minute twists, incredible acts of courage, powerful new forms of magic, and the resolution of many mysteries. Above all, this intense, cathartic book serves as a clear statement of the message at the heart of the Harry Potter series: that choice matters much more than destiny, and that love will always triumph over death.",
+      "genre": "fantasy",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630547330l/5._SY475_.jpg",
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "descr": "For twelve long years, the dread fortress of Azkaban held an infamous prisoner named Sirius Black. Convicted of killing thirteen people with a single curse, he was said to be the heir apparent to the Dark Lord, Voldemort. Now he has escaped, leaving only two clues as to where he might be headed: Harry Potter's defeat of You-Know-Who was Black's downfall as well. And the Azkaban guards heard Black muttering in his sleep, He's at Hogwarts . . . he's at Hogwarts. Harry Potter isn't safe, not even within the walls of his magical school, surrounded by his friends. Because on top of it all, there may well be a traitor in their midst.",
+      "genre": "fantasy",
+      "authorId": 1
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474154022l/3._SY475_.jpg",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "descr": "Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry.",
+      "genre": "fantasy",
+      "authorId": 1
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347697665l/393199.jpg",
+      "title": "Down and Out in Paris and London",
+      "descr": "This unusual fictional memoir - in good part autobiographical - narrates without self-pity and often with humor the adventures of a penniless British writer among the down-and-outs of two great cities. The Parisian episode is fascinating for its expose of the kitchens of posh French restaurants, where the narrator works at the bottom of the culinary echelon as dishwasher, or plongeur. In London, while waiting for a job, he experiences the world of tramps, street people, and free lodging houses. In the tales of both cities we learn some sobering Orwellian truths about poverty and of society.",
+      "genre": "classics",
+      "authorId": 2
+    },
+    {
+      "id": 5,
+      "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327959366l/5472.jpg",
+      "title": "Animal Farm",
+      "descr": "In 1984, London is a grim city where Big Brother is always watching you and the Thought Police can practically read your mind. Winston Smith joins a secret revolutionary organisation called The Brotherhood, dedicated to the destruction of the Party. Together with his beloved Julia, he hazards his life in a deadly match against the powers that be. Animal Farm is Orwell’s classic satire of the Russian Revolution - an account of the bold struggle, initiated by the animals, that transforms Mr. Jones’s Manor Farm into Animal Farm - a wholly democratic society built on the credo that All Animals Are Created Equal. But are they? AUTHOR: George Orwell (1903-1950) was born in India and served with the Imperial Police in Burma before joining the Republican Army in the Spanish Civil War. Orwell was the author of six novels as well as numerous essays and nonfiction works.",
+      "genre": "classics",
+      "authorId": 2
+    },
+    {
+      "id": 6,
+      "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1368870164l/967294.jpg",
+      "title": "The Empire of the Angels",
+      "descr": "Michelle Panson goes to heaven. He finds himself on the last judgment, which is led by three archangels. The most terrible test for a person is the subsequent reincarnation. From reincarnation he is saved by the guardian angel Emil Zola. Michel has a choice: to become an angel or a preacher on earth. The choice falls on the angel. He opens the way to the world of angels, in which Edmond Wells becomes his angel-mentor. Each angel is given three clients. The choice of their clients is behind the angels, and Michelle chooses three families that are shown in the lake of conception. One family turns out to be rich - from America, another from France and a very poor family - from Russia. Edmond Wells narrates that the soul has three main indicators: 25% of events occurring with a person are determined by heredity, 25% - by karma, and another 50% remain for free choice. At the same time, Michelle Panson and Raoul Razorbak are looking for the world of the sevenths who are higher in development than the angels. Raoul assumes they are gods.",
+      "genre": "fiction",
+      "authorId": 3
+    },
+    {
+      "id": 7,
+      "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387347452l/122372.jpg",
+      "title": "Thanatonautes",
+      "descr": "The novel tells the story of a researcher Michael Pinson and his friend Raoul Razorbak who go explore the Ultimate Continent (called New Australia): the continent of death. This adventure takes us across the different zones of the continent of the dead to the famous light. In doing these explorations the thanatonautes voluntarily risk their lives to discover the mysteries of death. The book is scattered regularly with a number of different sacred texts drawn from mythology, religion, and cosmogony from all over the world to highlight how each of these points of view resemble each other and tell the same story just with different words and symbols.",
+      "genre": "fiction",
+      "authorId": 3
+    },
+    {
+      "id": 8,
+      "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388806191l/837039.jpg",
+      "title": "Empire of the Ants",
+      "descr": "The plot begins as two stories that take place in parallel: one in the world of humans (in Paris), the other in the world of ants (in a Formica rufa colony in a park near Paris). The time is the early 21st century (the near future, relative to the time when Werber wrote the book). The human character receives a house and a provocative message as legacy from his recently deceased uncle. He begins to investigate his uncle's life and mysterious activities, and decides to descend into the cellar of the house but does not return. His family and other people follow, and disappear. The ant character is a male whose foraging expedition gets destroyed in one strike, by a mysterious force that comes from above. He suspects that a colony of another ant species has attacked them with a secret weapon, and attempts to meet with the queen and to rally other ants to investigate the disaster. However, he attracts the attention of a secret group of ants within the same colony that appear to want to conceal this information. As the plot unfolds, the humans and the ants encounter new mysteries and participate in challenging events, including a war between different ant species.",
+      "genre": "fiction",
+      "authorId": 3
+    },
+    {
+      "id": 9,
+      "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1213131305l/149267.jpg",
+      "title": "The Stand",
+      "descr": "When a man escapes from a biological testing facility, he sets in motion a deadly domino effect, spreading a mutated strain of the flu that will wipe out 99 percent of humanity within a few weeks. The survivors who remain are scared, bewildered, and in need of a leader. Two emerge–Mother Abagail, the benevolent 108-year-old woman who urges them to build a peaceful community in Boulder, Colorado; and Randall Flagg, the nefarious “Dark Man,” who delights in chaos and violence. As the dark man and the peaceful woman gather power, the survivors will have to choose between them–and ultimately decide the fate of all humanity.",
+      "genre": "horror",
+      "authorId": 4
+    },
+    {
+      "id": 10,
+      "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1373903563l/11566.jpg",
+      "title": "The Green Mile",
+      "descr": "When it first appeared, one volume per month, Stephen King's THE GREEN MILE was an unprecedented publishing triumph: all six volumes ended up on the New York Times bestseller lists—simultaneously—and delighted millions of fans the world over. Welcome to Cold Mountain Penitentiary, home to the Depression-worn men of E Block. Convicted killers all, each awaits his turn to walk the Green Mile, keeping a date with Old Sparky, Cold Mountain's electric chair. Prison guard Paul Edgecombe has seen his share of oddities in his years working the Mile. But he's never seen anyone like John Coffey, a man with the body of a giant and the mind of a child, condemned for a crime terrifying in its violence and shocking in its depravity. In this place of ultimate retribution, Edgecombe is about to discover the terrible, wondrous truth about Coffey, a truth that will challenge his most cherished beliefes... and yours.",
+      "genre": "horror",
+      "authorId": 4
+    },
+    {
+      "id": 11,
+      "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1334416842l/830502.jpg",
+      "title": "It",
+      "descr": "Welcome to Derry, Maine... It’s a small city, a place as hauntingly familiar as your own hometown. Only in Derry the haunting is real... They were seven teenagers when they first stumbled upon the horror. Now they are grown-up men and women who have gone out into the big world to gain success and happiness. But none of them can withstand the force that has drawn them back to Derry to face the nightmare without an end, and the evil without a name.",
+      "genre": "horror",
+      "authorId": 4
+    },
+    {
+      "id": 12,
+      "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1353277730l/11588.jpg",
+      "title": "The Shining",
+      "descr": "Jack Torrance's new job at the Overlook Hotel is the perfect chance for a fresh start. As the off-season caretaker at the atmospheric old hotel, he'll have plenty of time to spend reconnecting with his family and working on his writing. But as the harsh winter weather sets in, the idyllic location feels ever more remote...and more sinister. And the only one to notice the strange and terrible forces gathering around the Overlook is Danny Torrance, a uniquely gifted five-year-old. ",
+      "genre": "horror",
+      "authorId": 4
+    }
+  ],
+
+  "authors": [
+    {
+      "id": 1,
+      "name": "J.K. Rowling",
+      "poster": "https://images.gr-assets.com/authors/1596216614p8/1077326.jpg",
+      "info": "Joanne Rowling was born 31 July 1965, better known by her pen name J. K. Rowling, is a British author, philanthropist, film producer, television producer, and screenwriter. She is best known for writing the Harry Potter fantasy series, which has won multiple awards and sold more than 500 million copies, becoming the best-selling book series in history. The books are the basis of a popular film series, over which Rowling had overall approval on the scripts and was a producer on the final films. She also writes crime fiction under the pen name Robert Galbraith."
+    },
+    {
+      "id": 2,
+      "name": "George Orwell",
+      "poster": "https://images.gr-assets.com/authors/1588856560p8/3706.jpg",
+      "info": "Eric Arthur Blair (25 June 1903 – 21 January 1950), known by his pen name George Orwell, was an English novelist, essayist, journalist and critic. His work is characterised by lucid prose, biting social criticism, opposition to totalitarianism, and outspoken support of democratic socialism. As a writer, Orwell produced literary criticism and poetry, fiction and polemical journalism. He is known for the allegorical novella Animal Farm (1945) and the dystopian novel Nineteen Eighty-Four (1949). His non-fiction works, including The Road to Wigan Pier (1937), documenting his experience of working-class life in the north of England, and Homage to Catalonia (1938), an account of his experiences soldiering for the Republican faction of the Spanish Civil War (1936–1939), are as critically respected as his essays on politics and literature, language and culture. In 2008, The Times ranked George Orwell second among The 50 greatest British writers since 1945"
+    },
+    {
+      "id": 3,
+      "name": "Bernard Werber",
+      "poster": "https://images.gr-assets.com/authors/1256771217p8/70574.jpg",
+      "info": "Bernard Werber's Ants trilogy made him one of France's most popular science fiction novelists in the 90s. Werber began studying journalism in 1982 in Paris, where he discovered the work of sci-fi writer Philip K. Dick. In 1991 he published the novel Les Fourmis (Empire of the Ants), a complex fantasy novel in which ants were the heroes and humans the pesty antagonists. The novel became a cult hit across Europe, and Werber followed it with two other books in the same vein: Le Jour des Fourmis (Day of the Ants,1992) and La Révolution des Fourmis (Revolution of the Ants, 1995). His other books include L'Empire des Anges (Empire of the Angels, 2000) and L'Arbre des possibles (The Tree of Possibles, 2002)."
+    },
+    {
+      "id": 4,
+      "name": "Stephen King",
+      "poster": "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
+      "info": "Stephen Edwin King was born the second son of Donald and Nellie Ruth Pillsbury King. After his father left them when Stephen was two, he and his older brother, David, were raised by his mother. Parts of his childhood were spent in Fort Wayne, Indiana, where his father's family was at the time, and in Stratford, Connecticut. When Stephen was eleven, his mother brought her children back to Durham, Maine, for good. Her parents, Guy and Nellie Pillsbury, had become incapacitated with old age, and Ruth King was persuaded by her sisters to take over the physical care of them. Other family members provided a small house in Durham and financial support. After Stephen's grandparents passed away, Mrs. King found work in the kitchens of Pineland, a nearby residential facility for the mentally challenged. Stephen attended the grammar school in Durham and Lisbon Falls High School, graduating in 1966. From his sophomore year at the University of Maine at Orono, he wrote a weekly column for the school newspaper, THE MAINE CAMPUS. He was also active in student politics, serving as a member of the Student Senate. He came to support the anti-war movement on the Orono campus, arriving at his stance from a conservative view that the war in Vietnam was unconstitutional. He graduated in 1970, with a B.A. in English and qualified to teach on the high school level. A draft board examination immediately post-graduation found him 4-F on grounds of high blood pressure, limited vision, flat feet, and punctured eardrums. He met Tabitha Spruce in the stacks of the Fogler Library at the University, where they both worked as students; they married in January of 1971. As Stephen was unable to find placement as a teacher immediately, the Kings lived on his earnings as a laborer at an industrial laundry, and her student loan and savings, with an occasional boost from a short story sale to men's magazines. Stephen made his first professional short story sale (The Glass Floor) to Startling Mystery Stories in 1967. Throughout the early years of his marriage, he continued to sell stories to men's magazines. Many were gathered into the Night Shift collection or appeared in other anthologies. In the fall of 1971, Stephen began teaching English at Hampden Academy, the public high school in Hampden, Maine. Writing in the evenings and on the weekends, he continued to produce short stories and to work on novels."
+    }
+  ]
+}
