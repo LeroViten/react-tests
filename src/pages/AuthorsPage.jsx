@@ -1,11 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { NavLink, Route, useRouteMatch } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import '../styles/AuthorsPage/AuthorsPage.scss';
 import * as bookAPI from '../services/booksApi';
 import PageHeading from '../components/PageHeading/PageHeading';
-import AuthorSubPage from './AuthorSubPage';
+// import AuthorSubPage from './AuthorSubPage';
+
+const AuthorSubPage = lazy(() =>
+  import('./AuthorSubPage' /* webpackChunkName: "author-subpage" */),
+);
 
 export default function AuthorsPage() {
   const { url, path } = useRouteMatch();
@@ -49,7 +53,9 @@ export default function AuthorsPage() {
       <br />
       <hr />
 
-      <Route path={`${path}/:authorId`}>{authors && <AuthorSubPage authors={authors} />}</Route>
+      <Suspense fallback={<Loader className="Loader" type="Rings" color="#b00b69" />}>
+        <Route path={`${path}/:authorId`}>{authors && <AuthorSubPage authors={authors} />}</Route>
+      </Suspense>
     </>
   );
 }
