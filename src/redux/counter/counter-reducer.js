@@ -8,9 +8,7 @@ const valueReducer = createReducer(0, {
   [actions.decrement]: (state, { payload }) => state - payload,
 });
 
-// const stepReducer = createReducer(1, {
-//     ...state
-// })
+const stepReducer = (state = 1, action) => state;
 
 // const valueReducer = (state = 0, { type, payload }) => {
 //   switch (type) {
@@ -22,8 +20,6 @@ const valueReducer = createReducer(0, {
 //       return state;
 //   }
 // };
-
-const stepReducer = (state = 1, action) => state;
 
 export default combineReducers({
   value: valueReducer,
