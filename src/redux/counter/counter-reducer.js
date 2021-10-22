@@ -5,8 +5,8 @@ const valueReducer = (state = 0, { type, payload }) => {
   switch (type) {
     case actionTypes.INCREMENT:
       return state + payload;
-    case 'counter/Decrement':
-      return actionTypes.DECREMENT;
+    case actionTypes.DECREMENT:
+      return state - payload;
     default:
       return state;
   }
