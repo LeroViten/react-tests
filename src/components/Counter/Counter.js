@@ -1,12 +1,13 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { getValue, getStep } from '../../redux/counter/counter-selectors';
 import * as actions from '../../redux/counter/counter-actions';
 import Value from './Value';
 import Controls from './Controls';
 
 export default function Counter() {
-  const value = useSelector(state => state.counter.value);
-  const step = useSelector(state => state.counter.step);
+  const value = useSelector(getValue);
+  const step = useSelector(getStep);
   const dispatch = useDispatch();
 
   return (
