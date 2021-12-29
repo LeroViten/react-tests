@@ -3,3 +3,10 @@
 body {
   font-family: $primary-font-stack;
 }
+.Loader {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
