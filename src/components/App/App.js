@@ -1,12 +1,15 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { toast, ToastContainer, Zoom } from 'react-toastify';
+import ReactPlayer from 'react-player';
+// import CameraRoll from '../CameraRoll/CameraRoll';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.scss';
 
 function App() {
   const [video, setVideo] = useState(null);
   const [mode, setMode] = useState('environment');
-  
+  const [playbackSpeed, setPlaybackSpeed] = useState(0);
+
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -18,12 +21,12 @@ function App() {
       .getUserMedia({
         video: { facingMode: mode, width: 320, height: 240 },
       })
-      .then((stream) => {
+      .then(stream => {
         let video = videoRef.current;
         video.srcObject = stream;
         video.play();
       })
-      .catch((err) => {
+      .catch(err => {
         if (err.name === 'OverconstrainedError') {
           toast.error('This camera mode is not supported');
         }
@@ -45,17 +48,30 @@ function App() {
   };
 
   const stopVideo = () => {
-    videoRef.current.srcObject.getTracks().forEach((track) => track.stop());
+    videoRef.current.srcObject.getTracks().forEach(track => track.stop());
   };
 
   const switchCameras = () => {
     setMode(mode === 'user' ? 'environment' : 'user');
   };
 
+  const handlePlaybackSpeed = e => {
+    const { value } = e.target;
+    setPlaybackSpeed(+value);
+  };
+
   return (
     <div>
       <div className="streamWrapper">
-        <video ref={videoRef} />
+        <select onChange={handlePlaybackSpeed} name="playbackSpeed" value={playbackSpeed}>
+          <option value={-1.5}>-1.5</option>
+          <option value={-1.25}>-1.25</option>
+          <option value={1}>1</option>
+          <option value={1.25}>1.25</option>
+          <option value={1.5}>1.5</option>
+        </select>
+        <video ref={videoRef} style={{ transform: mode === 'user' ? 'scaleX(-1)' : '' }} />
+        <ReactPlayer url={video} />
       </div>
       <div className="btnWrapper">
         <button className="btn" onClick={getVideo}>
@@ -68,6 +84,7 @@ function App() {
           SWITCH
         </button>
       </div>
+      {/* <CameraRoll /> */}
       <ToastContainer
         transition={Zoom}
         autoClose={4000}
