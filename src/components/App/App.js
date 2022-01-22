@@ -12,8 +12,7 @@ function App() {
   const cameraRef = useRef(null);
 
   useEffect(() => {
-    // getVideo();
-    console.log(mode);
+    getVideo();
   }, [videoRef, mode]);
 
   const videoConstraints = {
@@ -71,22 +70,22 @@ function App() {
 
   return <div>
   <div className="streamWrapper">
-        {/* <video ref={videoRef} /> */}
-        <Webcam
-          ref={cameraRef}
-          videoConstraints={videoConstraints}
-          imageSmoothing="true"
-          screenshotQuality="1"
-        />
-        {photo && <img src={photo} alt="screen snap" />}
+        <video ref={videoRef} />
+        // <Webcam
+        //   ref={cameraRef}
+        //   videoConstraints={videoConstraints}
+        //   imageSmoothing="true"
+        //   screenshotQuality="1"
+        // />
+        // {photo && <img src={photo} alt="screen snap" />}
       </div>
       <div className="btnWrapper">
         <button className="btn" onClick={getVideo}>
           START
         </button>
-        <button className="btn" onClick={getScreenshot}>
-          PHOTO
-        </button>
+        // <button className="btn" onClick={getScreenshot}>
+        //   PHOTO
+        // </button>
         <button className="btn" onClick={stopVideo}>
           STOP
         </button>
