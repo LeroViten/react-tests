@@ -62,14 +62,25 @@ function App() {
 
   return (
     <div>
-      <div className="streamWrapper">
-        <select onChange={handlePlaybackSpeed} name="playbackSpeed" value={playbackSpeed}>
-          <option value={-1.5}>-1.5</option>
+      <div className="selectWrapper">
+        <select
+          className="speed-select"
+          onChange={handlePlaybackSpeed}
+          name="playbackSpeed"
+          value={playbackSpeed}
+        >
+          <option className="speed-select__value" value={-1.5}>
+            -1.5
+          </option>
           <option value={-1.25}>-1.25</option>
-          <option value={1}>1</option>
+          <option value={1} selected>
+            1
+          </option>
           <option value={1.25}>1.25</option>
           <option value={1.5}>1.5</option>
         </select>
+      </div>
+      <div className="streamWrapper">
         <video ref={videoRef} style={{ transform: mode === 'user' ? 'scaleX(-1)' : '' }} />
         <ReactPlayer url={video} />
       </div>
