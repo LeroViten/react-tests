@@ -11,10 +11,11 @@ function App() {
   const [playbackSpeed, setPlaybackSpeed] = useState(0);
 
   const videoRef = useRef(null);
+  const youtubeRef = useRef(null);
 
-  useEffect(() => {
-    getVideo();
-  }, [videoRef, mode]);
+  // useEffect(() => {
+  //   getVideo();
+  // }, [videoRef, mode]);
 
   const getVideo = () => {
     navigator.mediaDevices
@@ -58,6 +59,7 @@ function App() {
   const handlePlaybackSpeed = e => {
     const { value } = e.target;
     setPlaybackSpeed(+value);
+    youtubeRef.current.playbackSpeed = playbackSpeed;
   };
 
   return (
@@ -69,20 +71,29 @@ function App() {
           name="playbackSpeed"
           value={playbackSpeed}
         >
-          <option className="speed-select__value" value={-1.5}>
-            -1.5
+          <option className="speed-select__value" value={1} defaultValue>
+            Normal
           </option>
-          <option value={-1.25}>-1.25</option>
-          <option value={1} selected>
-            1
+          <option className="speed-select__value" value={0.125}>
+            0.125
           </option>
-          <option value={1.25}>1.25</option>
-          <option value={1.5}>1.5</option>
+          <option className="speed-select__value" value={0.25}>
+            -0.25
+          </option>
+          <option className="speed-select__value" value={0.5}>
+            0.5
+          </option>
         </select>
       </div>
       <div className="streamWrapper">
-        <video ref={videoRef} style={{ transform: mode === 'user' ? 'scaleX(-1)' : '' }} />
-        <ReactPlayer url={video} />
+        {/* <video ref={videoRef} style={{ transform: mode === 'user' ? 'scaleX(-1)' : '' }} /> */}
+        {/* <ReactPlayer url={'https://youtu.be/nVEPbUsFYxk'} /> */}
+        <video ref={youtubeRef} width="800px" height="600px" autoPlay>
+          <source
+            src="https://drive.google.com/file/d/1ruHGNuu2HUSEiVJOu9-nsJEXDLsOC0kw/view?usp=sharing"
+            type="video/mp4"
+          ></source>
+        </video>
       </div>
       <div className="btnWrapper">
         <button className="btn" onClick={getVideo}>
