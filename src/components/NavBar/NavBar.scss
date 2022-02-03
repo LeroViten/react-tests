@@ -1,1 +1,62 @@
 @import '../../styles/shared.scss';
+
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: #212532;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  @include box-shadow(6px, 6px);
+
+  &.active {
+    width: 200px;
+    height: 200px;
+
+    & span {
+      height: 50px;
+      width: 50px;
+      background: #333849;
+      transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+
+      &:hover {
+        @include box-shadow(2px, 2px);
+
+        & .ionicon {
+          color: #00ffff;
+          transform: scale(1.1);
+          filter: drop-shadow(0 0 2px #00ffff) drop-shadow(0 0 -5px #00ffff)
+            drop-shadow(0 0 15px #00ffff);
+        }
+      }
+
+      & .ionicon {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+        color: #fff;
+      }
+    }
+  }
+
+  & span {
+    @include flexbox-center();
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background: #ffffff80;
+    transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
+    transition: transform 0.3s, width 0.3s, height 0.3s, background 0.3s;
+    transition-delay: calc(0.1s * var(--i));
+
+    & .ionicon {
+      transition: 0.3s;
+      opacity: 0;
+    }
+  }
+}
