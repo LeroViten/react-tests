@@ -1,0 +1,72 @@
+@import '../../styles/shared.scss';
+.whiteBar {
+  @include flexbox-center();
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #8460ed, #ff1252);
+}
+
+.menu {
+  @include flexbox-center();
+  position: relative;
+  width: 200px;
+  height: 200px;
+
+  & li {
+    position: absolute;
+    list-style: none;
+    left: 0;
+    transform-origin: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(80px);
+
+    & a {
+      @include flexbox-center();
+      width: 40px;
+      height: 40px;
+      padding: 5px;
+      background: #212532;
+      border-radius: 50%;
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &.active .toggle {
+    transform: rotate(315deg);
+  }
+
+  &.active li {
+    transform: rotate(calc(360deg / 8 * var(--i)));
+  }
+}
+
+.toggle {
+  @include flexbox-center();
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #212532;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  transition: all 1s;
+  z-index: 100;
+}
+
+.ionicon {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #00ffff;
+    filter: drop-shadow(0 0 2px #00ffff) drop-shadow(0 0 -5px #00ffff) drop-shadow(0 0 15px #00ffff);
+  }
+}

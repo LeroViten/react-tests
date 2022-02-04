@@ -6,7 +6,7 @@ import { ReactComponent as PhoneIcon } from '../../icons/call-outline.svg';
 import { ReactComponent as CameraIcon } from '../../icons/camera-outline.svg';
 import { ReactComponent as ChatIcon } from '../../icons/chatbubble-ellipses-outline.svg';
 import { ReactComponent as GameIcon } from '../../icons/game-controller-outline.svg';
-import { ReactComponent as VolumeIcon } from '../../icons/volume-mute-outline.svg';
+import { ReactComponent as VolumeIcon } from '../../icons/volume-low-outline.svg';
 import { ReactComponent as WifiIcon } from '../../icons/wifi-outline.svg';
 import './NavBar.scss';
 
@@ -18,7 +18,7 @@ export default function NavBar() {
   };
 
   return (
-    <>
+    <div className="greyNav">
       <div className={`navigation ${isActive ? 'active' : ''}`} onClick={handleClick} role="button">
         <span style={{ '--i': 0, '--x': -1, '--y': 0 }}>
           <PlaneIcon />
@@ -48,6 +48,6 @@ export default function NavBar() {
           <WifiIcon />
         </span>
       </div>
-    </>
+    </div>
   );
 }

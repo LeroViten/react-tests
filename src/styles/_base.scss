@@ -8,3 +8,10 @@ body {
   min-height: 100vh;
   background: #10131c;
 }
+
+.app {
+  display: flex;
+  justify-content: space-between;
+  width: 860px;
+  height: 600px;
+}

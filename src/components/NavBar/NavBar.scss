@@ -1,12 +1,20 @@
 @import '../../styles/shared.scss';
 
+.greyNav {
+  @include flexbox-center();
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #8460ed, #ff1252);
+}
+
 .navigation {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background: #212532;
   border-radius: 10px;
   cursor: pointer;
