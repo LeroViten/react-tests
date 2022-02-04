@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { ReactComponent as PlaneIcon } from '../../icons/airplane-outline.svg';
 import { ReactComponent as AddIcon } from '../../icons/add-outline.svg';
 import { ReactComponent as AlarmIcon } from '../../icons/alarm-outline.svg';
@@ -23,44 +24,44 @@ export default function AnotherNavBar() {
           <AddIcon />
         </div>
         <li style={{ '--i': 0 }}>
-          <a href="https://www.google.com/" target="_blanc">
+          <NavLink to={'/cards'}>
             <BTIcon />
-          </a>
+          </NavLink>
         </li>
         <li style={{ '--i': 1 }}>
-          <a href="https://www.google.com/" target="_blanc">
+          <NavLink to={'/cards'}>
             <AlarmIcon />
-          </a>
+          </NavLink>
         </li>
         <li style={{ '--i': 2 }}>
-          <a href="https://www.google.com/" target="_blanc">
+          <NavLink to={'/cards'}>
             <WifiIcon />
-          </a>
+          </NavLink>
         </li>
         <li style={{ '--i': 3 }}>
-          <a href="https://www.google.com/" target="_blanc">
+          <NavLink to={'/cards'}>
             <PhoneIcon />
-          </a>
+          </NavLink>
         </li>
         <li style={{ '--i': 4 }}>
-          <a href="https://www.google.com/" target="_blanc">
+          <NavLink to={'/cards'}>
             <PlaneIcon />
-          </a>
+          </NavLink>
         </li>
         <li style={{ '--i': 5 }}>
-          <a href="https://www.google.com/" target="_blanc">
+          <NavLink to={'/cards'}>
             <GameIcon />
-          </a>
+          </NavLink>
         </li>
         <li style={{ '--i': 6 }}>
-          <a href="https://www.google.com/" target="_blanc">
+          <NavLink to={'/cards'}>
             <CameraIcon />
-          </a>
+          </NavLink>
         </li>
         <li style={{ '--i': 7 }}>
-          <a href="https://www.google.com/" target="_blanc">
+          <NavLink to={'/cards'}>
             <ChatIcon />
-          </a>
+          </NavLink>
         </li>
       </div>
     </div>
