@@ -1,0 +1,130 @@
+@import '../styles/shared.scss';
+
+section {
+  position: relative;
+  background: #161623;
+  min-height: 80vh;
+  min-width: 90vw;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  @include flexbox-center();
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#ffc107, #e91e63);
+    border-radius: 50%;
+    transform: translate(-250px, -120px);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(#2193f3, #31ff38);
+    border-radius: 50%;
+    transform: translate(200px, 140px);
+  }
+}
+
+.box {
+  position: relative;
+  min-width: 350px;
+  min-height: 400px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  z-index: 10;
+
+  & h3 {
+    color: aliceblue;
+    margin-bottom: 20px;
+  }
+
+  & .list {
+    position: relative;
+    display: flex;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+
+    &:hover {
+      background: #fff;
+      box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
+      transform: scale(1.15) translateX(20px) translateY(-10px);
+      z-index: 12;
+
+      & .boxContent .rank {
+        right: 20px;
+      }
+
+      & .boxContent h4,
+      & .boxContent p {
+        color: #333;
+      }
+    }
+
+    & .imgBox {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      margin-right: 10px;
+      margin-left: 10px;
+      overflow: hidden;
+
+      & img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    & .boxContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff;
+
+      & .rank {
+        position: absolute;
+        right: -50px;
+        color: #03a9f4;
+        transition: 0.5s;
+        font-size: 2em;
+
+        & small {
+          font-weight: 500;
+          opacity: 0.25;
+        }
+      }
+
+      & h4 {
+        line-height: 1.2em;
+        font-weight: 600;
+        transition: 0.5s;
+      }
+
+      & p {
+        font-size: 0.75em;
+        transition: 0.5s;
+      }
+    }
+  }
+}

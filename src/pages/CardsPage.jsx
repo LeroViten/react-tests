@@ -6,8 +6,14 @@ import './Cards.scss';
 export default function Cards() {
   return (
     <>
-      <Link to="/">GO HOME</Link>
+      <Link to="/" className="navLink">
+        GO HOME
+      </Link>
+      <Link to="/team" className="navLink">
+        GO TO TEAM
+      </Link>
       <div className="wrapper">
+        {/* <div className="wrapper--oval"> */}
         <div className="cardContainer">
           <div className="card" style={{ '--i': -1 }}>
             <div className="content" style={{ '--j': 1 }}>
@@ -40,6 +46,7 @@ export default function Cards() {
             </div>
           </div>
         </div>
+        {/* </div> */}
       </div>
     </>
   );

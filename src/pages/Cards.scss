@@ -1,14 +1,28 @@
 @import '../styles/shared.scss';
 
+.navLink {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  color: #69b00b;
+  transition: 0.5s;
+  z-index: 6;
+
+  &:nth-child(2) {
+    top: 8%;
+  }
+
+  &:hover {
+    color: #b00b69;
+    font-weight: bold;
+  }
+}
+
 // .wrapper {
 //   @include flexbox-center();
-//   min-height: 100vh;
-//   border-radius: 20px;
-//   background: #2e557c;
 //   transition: 0.5s;
 
-//   &::before {
-//     content: '';
+//   &--oval {
 //     position: absolute;
 //     top: 0;
 //     left: 0;
@@ -16,7 +30,7 @@
 //     height: 100%;
 //     background: #30bfa5;
 //     clip-path: circle(250px at center);
-//     z-index: -2;
+//     z-index: 0;
 //   }
 // }
 

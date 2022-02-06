@@ -16,14 +16,18 @@
   height: 600px;
 }
 
+html {
+  background: #161623; //#2e557c;
+}
+
 body {
   font-family: $primary-font-stack;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  z-index: -10;
   border-radius: 20px;
-  background: #2e557c;
   transition: 0.5s;
 
   &::before {
