@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 import { ReactComponent as PlaneIcon } from '../../icons/airplane-outline.svg';
 import { ReactComponent as AlarmIcon } from '../../icons/alarm-outline.svg';
 import { ReactComponent as BTIcon } from '../../icons/bluetooth-outline.svg';
@@ -17,10 +18,14 @@ export default function NavBar() {
     setIsActive(!isActive);
   };
 
+  const toastify = () => {
+    toast.error('Shit happened');
+  };
+
   return (
     <div className="greyNav">
       <div className={`navigation ${isActive ? 'active' : ''}`} onClick={handleClick} role="button">
-        <span style={{ '--i': 0, '--x': -1, '--y': 0 }}>
+        <span style={{ '--i': 0, '--x': -1, '--y': 0 }} onClick={toastify}>
           <PlaneIcon />
         </span>
         <span style={{ '--i': 1, '--x': 1, '--y': 0 }}>
