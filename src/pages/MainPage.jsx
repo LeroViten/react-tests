@@ -12,6 +12,9 @@ export default function MainPage() {
       <NavLink to="/team" className="navLink">
         GO TO TEAM
       </NavLink>
+      <NavLink to="/form" className="navLink">
+        GO TO FORM
+      </NavLink>
       <NavBar />
       <AnotherNavBar />
     </div>

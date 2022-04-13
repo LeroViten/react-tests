@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Cards = lazy(() => import('./pages/CardsPage' /* webpackChunkName: "cards-page" */));
 const Team = lazy(() => import('./pages/TeamPage' /* webpackChunkName: "team-page" */));
+const SignUpForm = lazy(() => import('./pages/FormPage' /* webpackChunkName: "form-page" */));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage' /* webpackChunkName: "404-page" */));
 
 const bounce = cssTransition({
@@ -28,6 +29,7 @@ function App() {
           <Route index element={<MainPage />} />
           <Route path="cards" element={<Cards />} />
           <Route path="team" element={<Team />} />
+          <Route path="form" element={<SignUpForm />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
