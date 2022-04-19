@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import useFetch from './hooks/useFetch';
 import Comments from './components/Comments';
+import './components/Comments/Comments.scss';
 
 function App() {
   const [comments, setComments] = useState([]);
@@ -16,6 +17,9 @@ function App() {
     <div className="App">
       {loading && <h2>LOADING...</h2>}
       {error && <h2>{error}</h2>}
+      <a className="hoverBtn" href="https://www.google.com" target="_blank" rel="noreferrer">
+        <span>Get Started</span>
+      </a>
       {comments && <Comments comments={comments} />}
     </div>
   );
